@@ -1,0 +1,35 @@
+<div class="container">
+  <form [formGroup]="formArticle" (ngSubmit)="addArticle()">
+    <div class="form-section">
+      <h1>Registrar Articulo</h1>
+    </div>
+    <div class="form-section">
+      <label>Nombre</label>
+      <input type="text" formControlName="name">
+    </div>
+    <div class="form-section">
+      <label>Decripcion</label>
+      <input type="text" formControlName="description">
+    </div>
+    <div class="form-section">
+      <label>Marca</label>
+      <input type="text" formControlName="brand">
+    </div>
+    <div class="form-section">
+      <label>Dimensiones (ancho x largo x altura) (cm)</label>
+      <input type="text" formControlName="dimensions">
+    </div>
+    <div class="form-section">
+      <label>Peso (Kg)</label>
+      <input type="text" formControlName="wheight">
+    </div>
+    <div class="form-section">
+      <label>Cantidad</label>
+      <input type="number" min="1" formControlName="stock">
+    </div>
+    <div class="form-section">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+  <a class="redirect" routerLink="/table">Ver tabla</a>
+</div>

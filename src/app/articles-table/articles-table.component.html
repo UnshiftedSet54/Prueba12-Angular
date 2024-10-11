@@ -1,0 +1,33 @@
+<div class="container">
+  <a class="redirect" routerLink="/">Regresar al formulario</a>
+  <table>
+    @if(articles.length >= 1){
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Marca</th>
+        <th>Dimensiones</th>
+        <th>Peso</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(article of articles; track $index){
+      <tr>
+        <td>{{$index}}</td>
+        <td>{{article.name}}</td>
+        <td>{{article.description}}</td>
+        <td>{{article.brand}}</td>
+        <td>{{article.dimensions}}</td>
+        <td>{{article.wheight}}</td>
+        <td>{{article.stock}}</td>
+      </tr>
+      }
+    </tbody>
+    }@else{
+    <p>No hay datos disponibles</p>
+    }
+  </table>
+</div>

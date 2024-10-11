@@ -1,1 +1,102 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+  background-color: #2CA58D;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  max-width: 1000px;
+}
+
+form{
+  color: white;
+  background-color: #262626;
+  padding: 1.5rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 7px 7px 7px black;
+}
+
+.form-section{
+  margin-bottom: 0.9rem;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+label{
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+input{
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.form-section button{
+  letter-spacing: 1px;
+  width: 100%;
+  background-color: #2CA58D;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.form-section button:hover{
+  cursor: pointer;
+}
+
+table{
+  border-spacing: 0;
+  color: beige;
+  letter-spacing: 1px;
+  background-color: #262626;
+  padding: 1.5rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 7px 7px 7px black;
+}
+
+.redirect{
+  text-align: center;
+  color: white;
+  display: block;
+  margin: 1.5rem auto;
+  text-decoration: none;
+}
+
+th, td{
+  padding: 0.5rem 0.5rem;
+}
+
+th{
+  padding-bottom: 1rem;
+}
+
+td{
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+tr:nth-child(even){
+  background-color: #383c44;
+}
